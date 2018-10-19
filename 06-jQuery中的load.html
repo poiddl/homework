@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-jQuery中的load</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+
+        function  jqueryAjax(){
+                $("#container").load("part.html")
+        }
+
+
+
+    </script>
+</head>
+<body>
+<input type="button" onclick="jqueryAjax()" value="点击">
+<div id="container"></div>
+<p id="pone"></p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-jQuery动画</title>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+
+
+
+        $(function(){
+
+            $("#phone").bind("click",function(){
+
+                $("#ptwo").toggle()
+            })
+            $("#ptwo").bind("click",function(){
+                $("#fadeDiv").fadeIn("slow")
+
+                $("#fadeDiv").fadeIn(3000)
+
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+<div>
+    <p id="pone" style="background-color: aquamarine">点击这里隐藏/显示面板 </p>
+    <p id="ptwo"style="background-color: beige">喵喵喵喵喵喵喵喵</p>
+</div>
+<div style="background-color: salmon; height: 200px" id="fadeDiv"></div>
+<div style="background-color: salmon; height: 200px;width: 160px;position: absolute" id="slidDiv"></div>
+</body>
+</html>
